@@ -43,13 +43,6 @@ cris.addEventListener('dblclick', function(event) {
   win.focus();
 })
 
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
-
-cris.addEventListener('mouseover', function(event) {
-  cris.style.color = 'red'
-})
-
 // Segue abaixo um exemplo do uso de event.target:
 
 function resetText(event) {
@@ -57,13 +50,12 @@ function resetText(event) {
 }
 
 firstLi.addEventListener('dblclick', resetText);
+
 secondLi.addEventListener('dblclick', function(event) {
   event.target.innerText = 'Aqui está a segunda tecnologia que mais gostei'
 });
+
 thirdLi.addEventListener('dblclick', function(event) {
   event.target.innerText = 'Aqui está a terceira tecnologia que mais gostei'
 });
 
-// Não precisa passar o parâmetro dentro da callback resetText. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'firstLi'.
