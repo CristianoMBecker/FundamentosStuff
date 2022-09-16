@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: aqua;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  figcaption {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: yellow;
+    max-width: 1000px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  figcaption {
+    font-size: 1.7rem;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section figure {
+    margin-right: 20px;
+  }
+
+}
+
+

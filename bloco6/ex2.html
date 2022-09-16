@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+  <script src="node_modules/jquery/"></script>
+  <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <main class="container">
+    <header>
+      <h1 class="display-1">Sorteio Viagem</h1>
+    </header>
+      <div class="nome">
+        <label for="name" class="lead">Nome Completo: 
+          <input id="name" type="text" placeholder="Nome" maxlength="50" class="form-control">
+        </label>
+      </div>
+      <div>
+        <label for="email" class="lead">Email: 
+          <input id="email" name="email" type="email" placeholder="E-mail" class="form-control">
+        </label>  
+      </div>
+        <div> 
+          <p class="lead">Opções de Viagem</p>
+          <input type="radio" name="talk-type" id="talk-type-1" value="Cancun"> <label for="talk-type-1">Cancun</label>
+
+          <input type="radio" name="talk-type" id="talk-type-2" value="Madrid"> <label for="talk-type-2">Madrid</label>
+
+          <input type="radio" name="talk-type" id="talk-type-3" value="Toussaint"> <label for="talk-type-3">Toussaint</label> 
+
+          <input type="radio" name="talk-type" id="talk-type-4" value="Laugh Tale"> <label for="talk-type-4">Laugh Tale</label>
+        </div>   
+          <label for="texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <textarea name="texto" id="texto" cols="50" rows="10" class="form-control"></textarea>
+      <div class="data">
+        <label for="data" class="lead">Data: <input type="date" name="data" id="data" placeholder="dd/mm/aaaa"></label>
+      </div>
+      <div class="concordo">
+        <label for="concordo" class="lead">Concordo que li todo o conteúdo<input type="checkbox" name="concordo" id="concordo" class="form-check-input" checked
+          checked>
+        <label for="concordo2" class="lead">Quero receber outras promoções<input type="checkbox" name="concordo2" id="concordo2" class="form-check-input" checked
+          checked>
+      </div>
+      <div class="botoes">
+        <button id="botoes" class="btn btn-primary"><label for="botoes">Enviar</label></button>
+        <button id="botoes2" class="btn btn-secondary"><label for="botoes2">Apagar</label></button>
+      </div>
+  </main>
+  <script src="form.js"></script>
 </body>
 </html>
